@@ -1,6 +1,5 @@
+import 'package:devxp_flutter/screens/homescreen.dart';
 import 'package:flutter/material.dart';
-
-import 'screens/meet_instructor_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MeetInstructorScreen(),
+      home: const HomeScreen(),
     );
   }
 }
