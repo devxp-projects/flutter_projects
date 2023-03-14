@@ -1,6 +1,6 @@
-import 'package:devxp_flutter/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:devxp_flutter/utils/styles.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class QualityEducationScreen extends StatelessWidget {
@@ -19,8 +19,8 @@ class QualityEducationScreen extends StatelessWidget {
             decoration: BoxDecoration(
                 gradient: LinearGradient(
                     colors: [
-                  const Color(0xFFE4FFFF).withOpacity(0.3),
-                  Colors.white
+                  AppColors.secondary.withOpacity(0.3),
+                  AppColors.white
                 ],
                     begin: Alignment.bottomLeft,
                     end: Alignment.topRight)),
@@ -32,7 +32,7 @@ class QualityEducationScreen extends StatelessWidget {
               child: Container(
                 height: screenHeight - 35,
                 width: 107,
-                color: const Color(0xFFE4FFFF),
+                color: AppColors.secondary,
               ),
             ),
           ),
@@ -49,19 +49,22 @@ class QualityEducationScreen extends StatelessWidget {
                   Row(
                     children: [
                       bannerText(
-                          value: 'Quality', color: black),
+                          value: 'Quality',
+                          color: AppColors.black),
                       const SizedBox(
                         width: 4,
                       ),
                       bannerText(
                           value: 'Education',
-                          color: Colors.green),
+                          color: AppColors.primary),
                     ],
                   ),
                   bannerText(
-                      value: 'By Any Means', color: black),
+                      value: 'By Any Means',
+                      color: AppColors.black),
                   bannerText(
-                      value: 'Necessary', color: black)
+                      value: 'Necessary',
+                      color: AppColors.black)
                 ],
               ),
             ),
@@ -74,14 +77,14 @@ class QualityEducationScreen extends StatelessWidget {
               width: 162,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  color: titleColor),
+                  color: AppColors.primary),
               child: Center(
                 child: Text(
                   'Get Started',
                   textAlign: TextAlign.center,
                   style: GoogleFonts.sourceSansPro(
                       fontSize: 16,
-                      color: white,
+                      color: AppColors.white,
                       fontWeight: FontWeight.w600),
                 ),
               ),
@@ -115,7 +118,7 @@ class QualityEducationScreen extends StatelessWidget {
               height: 101,
               width: 142,
               decoration: const BoxDecoration(
-                color: white,
+                color: AppColors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(5),
                   topRight: Radius.circular(5),
@@ -149,7 +152,8 @@ class QualityEducationScreen extends StatelessWidget {
                                 textAlign: TextAlign.center,
                                 style: GoogleFonts.poppins(
                                     fontSize: 10,
-                                    color: titleColor,
+                                    color:
+                                        AppColors.primary,
                                     fontWeight:
                                         FontWeight.w600),
                               ),
@@ -224,7 +228,7 @@ class QualityEducationScreen extends StatelessWidget {
               height: 77,
               width: 88,
               decoration: const BoxDecoration(
-                color: white,
+                color: AppColors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(5),
                   topRight: Radius.circular(5),
@@ -262,7 +266,7 @@ class QualityEducationScreen extends StatelessWidget {
                               '15K',
                               style: GoogleFonts.poppins(
                                   fontSize: 14,
-                                  color: titleColor,
+                                  color: AppColors.primary,
                                   fontWeight:
                                       FontWeight.w600),
                             ),
