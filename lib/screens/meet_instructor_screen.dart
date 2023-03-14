@@ -1,5 +1,5 @@
 import 'package:devxp_flutter/data/instructor_details.dart';
-import 'package:devxp_flutter/utils/colors.dart';
+import 'package:devxp_flutter/utils/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +26,7 @@ class MeetInstructorScreen extends StatelessWidget {
                 textAlign: TextAlign.left,
                 style: GoogleFonts.poppins(
                   textStyle: TextStyle(
-                    color: black,
+                    color: AppColors.black,
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w600,
                   ),
@@ -98,7 +98,7 @@ class InstructorCard extends StatelessWidget {
       child: Container(
         height: 173.h,
         width: 182.w,
-        color: white,
+        color: AppColors.white,
         child: Column(
           children: [
             Padding(
@@ -138,7 +138,7 @@ class InstructorCard extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: GoogleFonts.poppins(
                     fontSize: 7.sp,
-                    color: titleColor,
+                    color: AppColors.primary,
                     fontWeight: FontWeight.w500),
               ),
             ),
