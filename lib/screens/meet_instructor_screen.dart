@@ -11,10 +11,8 @@ class MeetInstructorScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     ScreenUtil.init(context,
         designSize: const Size(392.7, 803));
-    return Scaffold(
-      backgroundColor: AppColors.white,
-      body: SafeArea(
-          child: Column(
+    return SizedBox(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
@@ -75,7 +73,7 @@ class MeetInstructorScreen extends StatelessWidget {
             ],
           )
         ],
-      )),
+      ),
     );
   }
 }
