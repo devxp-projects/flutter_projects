@@ -1,4 +1,4 @@
-import 'package:devxp_flutter/screens/quality_education_screen.dart';
+import 'package:devxp_flutter/screens/good_education_to_life.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -9,8 +9,9 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: const [
-          QualityEducationScreen(),
+          // QualityEducationScreen(),
           // MeetInstructorScreen(),
+          GoodEducationToLife()
         ],
       ),
     );

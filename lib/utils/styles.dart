@@ -11,7 +11,8 @@ class AppColors {
 class AppFonts {
   final poppins = GoogleFonts.poppins().fontFamily;
   final openSans = GoogleFonts.openSans().fontFamily;
-  final sourceSansPro = GoogleFonts.sourceSansPro().fontFamily;
+  final sourceSansPro =
+      GoogleFonts.sourceSansPro().fontFamily;
 }
 
 /// fontFamily+fontSize+fontWeight
@@ -28,7 +29,7 @@ class AppTextStyles {
     fontSize: 32,
     fontWeight: FontWeight.w700,
   );
-   final pop24SmBd = TextStyle(
+  final pop24SmBd = TextStyle(
     fontFamily: AppFonts().poppins,
     fontSize: 24,
     fontWeight: FontWeight.w600,
@@ -36,6 +37,12 @@ class AppTextStyles {
   final pop20SmBd = TextStyle(
     fontFamily: AppFonts().poppins,
     fontSize: 20,
+    fontWeight: FontWeight.w600,
+  );
+  final pop20SmBdGreen = TextStyle(
+    fontFamily: AppFonts().poppins,
+    fontSize: 20,
+    color: AppColors.primary,
     fontWeight: FontWeight.w600,
   );
   final pop16SmBd = TextStyle(
