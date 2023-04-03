@@ -1,0 +1,29 @@
+name: devxp_flutter_projects
+packages:
+    - apps/**
+    - shared/**
+command:
+    bootstrap:
+        usePubspecOverrides: true
+scripts:
+    analyze:
+        run: melos exec -- "flutter analyze"
+        description: Run `flutter analyze` in all packages
+
+    format:
+        run: melos exec -- "flutter format . --set-exit-if-changed"
+        description: Run `flutter format .` in all packages
+    ch3:
+        run: melos exec -- " flutter run lib/main.dart"
+        select-package:
+          scope: 'ch3'
+    ch4:
+        run: melos exec -- " flutter run lib/main.dart"
+        select-package:
+          scope: 'ch4'
+    
+
+    test:
+        # Only run the test command when the package has a test directory
+        run: melos exec --dir-exists=test -- "flutter test"
+        description: Run `flutter test` in all packages
