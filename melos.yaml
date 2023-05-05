@@ -17,10 +17,10 @@ scripts:
         run: melos exec -- " flutter run lib/main.dart"
         select-package:
           scope: 'ch3'
-    ch4:
+    ch5:
         run: melos exec -- " flutter run lib/main.dart"
         select-package:
-          scope: 'ch4'
+          scope: 'ch5'
     
 
     test:
